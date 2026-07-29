@@ -2,16 +2,96 @@
 
 A new Flutter project.
 
-## Getting Started
+# Assignment Two - Flutter UI
 
-This project is a starting point for a Flutter application.
+A Flutter mobile application developed for **Mobile Application Development - Assignment Two**.
 
-A few resources to get you started if this is your first Flutter project:
+The application recreates the provided Figma banking dashboard design and implements multiple screens with navigation using Flutter's `PageView` and `PageController`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Student Information
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Name:** Biozid Bhuiyan Tonoy
+- **Course:** Mobile Application Development
+
+## Project Overview
+
+This project is a Flutter UI implementation based on the Figma design provided for Assignment Two.
+
+The assignment contains four available pages. This implementation includes the three required/selected pages:
+
+- Page 1 - Home
+- Page 2 - Monthly Spending Report
+- Page 4 - User Profile
+
+Page 3 (Cards) is not included because the assignment requires Page 1, Page 4, and one page selected from Page 2 or Page 3.
+
+## Implemented Screens
+
+### Page 1 - Home
+
+The Home screen contains:
+
+- Personalized welcome header
+- User avatar
+- Notification indicator
+- Total balance card
+- Savings information
+- Monthly balance change
+- Transfer action
+- Pay Bills action
+- Invest action
+- Recent transactions
+- Income and expense indicators
+
+### Page 2 - Monthly Spending Report
+
+The Reports screen contains:
+
+- Personalized welcome header
+- Total expenses for the last 30 days
+- Monthly expense change indicator
+- Spending breakdown by category
+- Food & Drink expenses
+- Shopping expenses
+- Housing expenses
+- Transport expenses
+- Other expenses
+- Visual progress bars for spending categories
+
+### Page 4 - User Profile
+
+The Profile screen contains:
+
+- Personalized welcome header
+- Profile avatar
+- Student name
+- Student ID
+- Student email
+- Personal Bio / Story
+
+## Navigation
+
+Navigation between the implemented pages is built using:
+
+- `PageView`
+- `PageController`
+- `BottomNavigationBar`
+
+The application contains three navigation destinations:
+
+- Home
+- Reports
+- Profile
+
+Manual PageView swiping is disabled, and pages are changed through the bottom navigation bar using the `PageController`.
+
+## Project Structure
+
+```text
+lib/
+├── main.dart
+└── screens/
+    ├── main_screen.dart
+    ├── page_one.dart
+    ├── page_two.dart
+    └── profile_page.dart

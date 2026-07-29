@@ -19,23 +19,14 @@ class PageOne extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // =========================
-              // HEADER
-              // =========================
               _buildHeader(),
 
               const SizedBox(height: 20),
 
-              // =========================
-              // BALANCE CARD
-              // =========================
               _buildBalanceCard(),
 
               const SizedBox(height: 20),
 
-              // =========================
-              // QUICK ACTIONS
-              // =========================
               Row(
                 children: [
                   Expanded(
@@ -66,9 +57,6 @@ class PageOne extends StatelessWidget {
 
               const SizedBox(height: 22),
 
-              // =========================
-              // RECENT TRANSACTIONS HEADER
-              // =========================
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -101,9 +89,6 @@ class PageOne extends StatelessWidget {
 
               const SizedBox(height: 8),
 
-              // =========================
-              // TRANSACTIONS
-              // =========================
               const _TransactionTile(
                 icon: Icons.movie_outlined,
                 title: 'Netflix Subscription',
@@ -158,9 +143,7 @@ class PageOne extends StatelessWidget {
     );
   }
 
-  // ============================================================
   // HEADER
-  // ============================================================
 
   Widget _buildHeader() {
     return Row(
@@ -245,9 +228,7 @@ class PageOne extends StatelessWidget {
     );
   }
 
-  // ============================================================
   // BALANCE CARD
-  // ============================================================
 
   Widget _buildBalanceCard() {
     return Container(
@@ -350,9 +331,7 @@ class PageOne extends StatelessWidget {
   }
 }
 
-// ============================================================
 // QUICK ACTION CARD
-// ============================================================
 
 class _QuickActionCard extends StatelessWidget {
   final IconData icon;
@@ -406,9 +385,7 @@ class _QuickActionCard extends StatelessWidget {
   }
 }
 
-// ============================================================
 // TRANSACTION TILE
-// ============================================================
 
 class _TransactionTile extends StatelessWidget {
   final IconData icon;
